@@ -3,6 +3,12 @@ import communityBg from '../../Assets/community.png'
 import chandigarh from '../../Assets/gdg chandigarh.png'
 import jhalandar from '../../Assets/cp-gdg jalandhar.png'
 import ludhiana from '../../Assets/cp-gdg ludhiana.png'
+import slite from '../../Assets/community/slite.png'
+import nit from '../../Assets/community/nit.jpg'
+import geeks from '../../Assets/community/gfg.jpg'
+import dav from '../../Assets/community/dav.png'
+import open from '../../Assets/community/open.png'
+
 export default function Community() {
   return (
     <>
@@ -46,7 +52,7 @@ export default function Community() {
       </div>
       <div class="p-2 md:w-1/5">
         <div class="h-full  overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumP5nr3pZ89C4GnNKHTXFvruVyAOm6ZwU2Sibo" alt="blog"/>
+          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src={dav} alt="blog"/>
        
         </div>
       </div>
@@ -71,7 +77,7 @@ export default function Community() {
       </div>
       <div class="p-4 md:w-1/5">
         <div class="h-full  overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumuuoyKrzGDN7MfW9sTV1IA0zrSZwixYbo25LP" alt="blog"/>
+          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src={nit} alt="blog"/>
        
         </div>
       </div>
@@ -79,13 +85,13 @@ export default function Community() {
     <div class="flex flex-wrap gap-10 justify-center z-10  max-w-7xl">
       <div class="p-4 md:w-1/5">
         <div class="h-full  overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumr9Cbws1tqLi810a5BU7mZyDEfnuXpQgMYRIT" alt="blog"/>
+          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src={slite} alt="blog"/>
        
         </div>
       </div>
       <div class="p-4 md:w-1/5">
         <div class="h-full  overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumCwpKxxi6EeD1wHIp3zVSgTXJyWtuZ2hdcixR" alt="blog"/>
+          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src={geeks} alt="blog"/>
        
         </div>
       </div>
@@ -96,7 +102,7 @@ export default function Community() {
       </div>
       <div class="p-4 md:w-1/5">
         <div class="h-full  overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumUYxQWcrVPFul6q2HRvZ8sMIWLa5xwjUytOhi" alt="blog"/>
+          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src={open} alt="blog"/>
        
         </div>
       </div>
