@@ -6,7 +6,7 @@ import ludhiana from '../../Assets/cp-gdg ludhiana.png'
 export default function Corporate() {
   return (
     <>
-     <div className='md:h-screen ' id='sponser'>
+     <div className='md:h-screen mt-28' id='sponser'>
         <div className="flex  justify-start mt-0 md:mt-10 overflow-hidden">
         <div className="container">
           <div className="w-3/4">
@@ -33,7 +33,7 @@ export default function Corporate() {
       </div>
       <div class="p-4 md:w-1/4">
         <div class="h-full  overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://zko8va4y8i.ufs.sh/f/GunMk0mxX0j1q9sojvKyXgwzif8tAk7eM0srav4W9mElqKpc
+          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://zko8va4y8i.ufs.sh/f/GunMk0mxX0j1fVACDbZmdZB8h7Gy9E4PH6l5JzgQ0ncsxka2
 " alt="blog"/>
        
         </div>
@@ -46,26 +46,7 @@ export default function Corporate() {
         </div>
       </div>
     </div>
-    <div class="flex flex-wrap gap-10 justify-center z-10">
-      <div class="p-4 md:w-1/4">
-        <div class="h-full  overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://zko8va4y8i.ufs.sh/f/GunMk0mxX0j1fVACDbZmdZB8h7Gy9E4PH6l5JzgQ0ncsxka2 " alt="blog"/>
-       
-        </div>
-      </div>
-      {/* <div class="p-4 md:w-1/4">
-        <div class="h-full  overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src={jhalandar} alt="blog"/>
-       
-        </div>
-      </div>
-      <div class="p-4 md:w-1/4">
-        <div class="h-full  overflow-hidden">
-          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src={ludhiana} alt="blog"/>
-       
-        </div>
-      </div> */}
-    </div>
+  
   </div>
 </section>
       </div>

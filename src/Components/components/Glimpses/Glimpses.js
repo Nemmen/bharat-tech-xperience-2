@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export default function Glimpses() {
   return (
-    <section className="w-full bg-inherit py-16 px-4 md:px-6 overflow-hidden">
+    <section className="w-full bg-inherit lg:mt-[-100px] px-4 md:px-6 overflow-hidden">
        
-               <div className="flex  justify-start mt-0 md:mt-10 overflow-hidden">
+               <div className="flex  justify-start  overflow-hidden">
                <div className="container">
                  <div className="w-3/4">
                    <div className="flex flex-wrap w-full py-32 relative mb-4">
