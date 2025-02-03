@@ -3,7 +3,7 @@ import teamBg from "../../Assets/team.png";
 import memImg from "../../Assets/sujal.jpg"
 import memImg3 from "../../Assets/amandeep.jpg"
 import memImg4 from "../../Assets/abhishek3.jpg"
-import memImg5 from "../../Assets/aryan2.jpg"
+import memImg5 from "../../Assets/aryanImg.jpg"
 import memImg2 from "../../Assets/niraj.jpg"
 export default function Team() {
   const team = [
