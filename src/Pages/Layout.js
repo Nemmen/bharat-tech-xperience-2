@@ -75,6 +75,8 @@ import Organizers from "../Components/components/Organizers/Organizers";
 import Judges from "../Components/components/Judges/Judges";
 import CodeOfConduct from "../Components/components/CodeofConduct/CodeofConduct";
 import Faq from "./Faq/Faq";
+import Catalyst from "../Components/components/Catalysts/Catalyst";
+import Guests from "../Components/components/Guests/Guest";
 // import logo from "../../Assets/textures/2.0logo.png"
 // import Gallery from './Gallery/Gallery'
 
@@ -113,9 +115,13 @@ export default function Layout() {
           <div id="stars"></div>
           <Glimpses />
           <div id="stars"></div>
-          {/* <Judges /> */}
+          <Judges />
+          <div id="stars"></div>
+          <Guests />
           <div id="stars"></div>
           <Mentors />
+          <div id="stars"></div>
+          <Catalyst />
           <div id="stars"></div>
           <Organizers />
           <div id="stars"></div>

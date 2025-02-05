@@ -116,40 +116,71 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Award, Code, Cpu, Globe, Briefcase } from "lucide-react";
+import { Award, Code, Cpu, Globe, Briefcase, Building, Music } from "lucide-react";
 
 const judges = [
   {
-    name: "Dr. Priya Sharma",
-    role: "Head of Innovation",
-    company: "TechVision Labs",
+    name: "Santosh Kumar Mishra",
+    role: "Software Engineer",
+    company: "Microsoft, Founder of InterviewCafe",
     description:
-      "Leading breakthrough research in AI and quantum computing, with over 15 years of experience in developing cutting-edge technologies.",
+      "Experienced software engineer at Microsoft and the founder of InterviewCafe, dedicated to mentoring and building innovative solutions.",
     image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
+      "https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumuH8ULRzGDN7MfW9sTV1IA0zrSZwixYbo25LP",
     icon: <Cpu className="w-8 h-8" />,
   },
   {
-    name: "Alex Thompson",
-    role: "Chief Technology Officer",
-    company: "Future Systems Inc.",
+    name: "Saumya Awasthi",
+    role: "Software Engineer",
+    company: "Kigen",
     description:
-      "Pioneer in cloud architecture and distributed systems, helping startups scale from zero to millions of users.",
+      "Passionate software engineer at Kigen, specializing in security and embedded systems development.",
     image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800",
+      "https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumFUg7qxJbL95YayPfxuDQMFsXlC0oBImU6z28",
     icon: <Code className="w-8 h-8" />,
   },
   {
-    name: "Dr. Maya Patel",
-    role: "Director of Research",
-    company: "Global Tech Solutions",
+    name: "Anish Giri",
+    role: "Senior Frontend Developer",
+    company: "Fidelity Investments",
     description:
-      "Expert in sustainable technology and green computing, leading initiatives for environmentally conscious innovation.",
+      "Expert in frontend technologies, building seamless user experiences at Fidelity Investments.",
     image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=800",
+      "https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumIDPeZshR21jqluvKkFoRaDpPfCGTtxewIs74",
     icon: <Globe className="w-8 h-8" />,
   },
+  {
+    name: "Pankaj Judge",
+    role: "Founder",
+    company: "Chai Thela",
+    description:
+      "Founder of Chai Thela, an entrepreneur bringing innovative ideas to the food and beverage industry.",
+    image:
+      "https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumyucICVGvj9LGdSxXKPThlzeQcWmgO61ZJ87U",
+    icon: <Briefcase className="w-8 h-8" />,
+  },
+  {
+    name: "Gourav Mahipal",
+    role: "Managing Director",
+    company: "Veritos Infosolutions Pvt. Ltd.",
+    description:
+      "Managing Director at Veritos Infosolutions, leading digital transformation and innovative software solutions.",
+    image:
+      "https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumFVNhYeJbL95YayPfxuDQMFsXlC0oBImU6z28",
+    icon: <Building className="w-8 h-8" />,
+  },
+  {
+    name: "Aditya Garg",
+    role: "Associate Consultant",
+    company: "Shure Audio Technologies",
+    description:
+      "Associate Consultant at Shure Audio Technologies, specializing in audio engineering and innovative sound solutions.",
+    image:
+      "https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumXuR8O52YwQAC3BxfPnoR46m9tK5uUkNerSOE",
+    icon: <Music className="w-8 h-8" />,
+  },
 ];
+
 
 function App() {
   const settings = {
@@ -181,7 +212,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 py-12 px-4">
+    <div className="min-h-screen bg-inherit py-12 px-4 mb-12">
       <div className="container">
         
         <div className="w-full">
@@ -245,7 +276,7 @@ function App() {
                         <div className="flex items-center gap-4 pt-4">
                           <Briefcase className="w-5 h-5 text-gray-400" />
                           <span className="text-gray-400">
-                            15+ years of expertise
+                          Bringing years of expertise and impactful contributions
                           </span>
                         </div>
                       </div>

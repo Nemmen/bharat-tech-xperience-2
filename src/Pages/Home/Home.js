@@ -8,6 +8,7 @@ import img4 from "../../Assets/4.png";
 import line1 from "../../Assets/line-1.png";
 import line2 from "../../Assets/line-2.png";
 import brochure from "../../Assets/brochure.pdf";
+import rules from "../../Assets/Rules.pdf";
 
 import "./style.css";
 // import Header from "../../Components/Header/Header";
@@ -93,12 +94,7 @@ const Home = () => {
               </button>
             </div> */}
                 <div className="flex flex-wrap justify-center items-center gap-4">
-                  <div
-                    class="apply-button"
-                    data-hackathon-slug="bharat-tech-xperience"
-                    data-button-theme="light"
-                    style={{ height: "44px", width: "312px" }}
-                  ></div>
+                 
                   {/* <Link to='/'>
                <button className='bg-gray-500  py-2 px-6 hover:bg-green-500 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px] '>Download Brochure</button>
              </Link> */}
@@ -108,6 +104,13 @@ const Home = () => {
                     className="bg-gray-500 py-2 px-6 hover:bg-green-500 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]"
                   >
                     Download Brochure
+                  </a>
+                  <a
+                    href={rules}
+                    download="Rules & Regulations"
+                    className="bg-gray-500 py-2 px-6 hover:bg-green-500 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]"
+                  >
+                    Rules & Regulations
                   </a>
                 </div>
               </div>

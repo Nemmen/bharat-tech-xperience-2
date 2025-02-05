@@ -83,6 +83,15 @@ export default function Sponsers() {
                   />
                 </div>
               </div>
+              <div className="p-3 md:w-1/4">
+                <div className="h-full overflow-hidden">
+                  <img
+                    className="lg:h-48 md:h-36 w-full object-contain object-center"
+                    src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumlXTWAGu4P3qMiabZeUz87wrEkVfCgNntQHSJ"
+                    alt="Quickpic"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>

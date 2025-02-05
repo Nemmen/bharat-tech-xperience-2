@@ -6,7 +6,7 @@ import ludhiana from '../../Assets/cp-gdg ludhiana.png'
 export default function Corporate() {
   return (
     <>
-     <div className='md:h-screen mt-28' id='sponser'>
+     <div className='md:h-screen mt-28 mb-36' id='sponser'>
         <div className="flex  justify-start mt-0 md:mt-10 overflow-hidden">
         <div className="container">
           <div className="w-3/4">
@@ -24,29 +24,58 @@ export default function Corporate() {
   <div class="container px-5 md:py-24 mx-auto">
   
     <div class="flex flex-wrap gap-10 justify-center z-10">
-      <div class="p-4 md:w-1/4">
+      <div class="p-4 md:w-1/5">
         <div class="h-full  overflow-hidden">
           <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://zko8va4y8i.ufs.sh/f/GunMk0mxX0j1tfve8Ho4bFcDu910peAGPXTlZIgwkVLoBy2q
 " alt="blog"/>
        
         </div>
       </div>
-      <div class="p-4 md:w-1/4">
+      <div class="p-4 md:w-1/5">
         <div class="h-full  overflow-hidden">
           <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://zko8va4y8i.ufs.sh/f/GunMk0mxX0j1fVACDbZmdZB8h7Gy9E4PH6l5JzgQ0ncsxka2
 " alt="blog"/>
        
         </div>
       </div>
-      <div class="p-4 md:w-1/4">
+      <div class="p-4 md:w-1/5">
         <div class="h-full  overflow-hidden">
           <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://zko8va4y8i.ufs.sh/f/GunMk0mxX0j1ugJWrpeXKRsYgLlbwtTWD5Ho8E6pGOnQPmZd
 " alt="blog"/>
        
         </div>
       </div>
+      <div class="p-4 md:w-1/5">
+        <div class="h-full  overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumWN6WJpF9dK5rAVSzcy9Z7GwITFbsHaq1kfQ4
+" alt="blog"/>
+        </div>
+      </div>
     </div>
-  
+    <div class="flex flex-wrap gap-10 justify-center z-10">
+      <div class="p-4 md:w-1/5">
+        <div class="h-full  overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumwSSZXJEYh6vMjIobVskel2URXBKJwfdaEic9
+" alt="blog"/>
+       
+        </div>
+      </div>
+      <div class="p-4 md:w-1/5">
+        <div class="h-full  overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumbRIVBfSVDWL2mqUCMHoirweBvNz5EsX03bOc
+" alt="blog"/>
+       
+        </div>
+      </div>
+      <div class="p-4 md:w-1/5">
+        <div class="h-full  overflow-hidden">
+          <img class="lg:h-48 md:h-36 w-full object-contain object-center" src="https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumZp7Ehy8nLS41ZsWrz2yX9qNdG5vVC7FuBlfa
+" alt="blog"/>
+       
+        </div>
+      </div>
+ 
+    </div>
   </div>
 </section>
       </div>

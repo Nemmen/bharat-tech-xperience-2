@@ -263,6 +263,14 @@ const mentors = [
     image: "https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumJrVrCI2viyu6xWXKJ2tVo5vgeS7mwpHlNsha",
     quote: "Building scalable mobile solutions with a focus on user experience.",
     bio: "Pranav excels in mobile app development, creating high-quality applications across multiple platforms while mentoring aspiring developers."
+  },
+  {
+    id: 8,
+    name: "Mr. Viswateja Yetukuri",
+    role: "Senior Blockchain Developer",
+    image: "https://bmnmsbiymz.ufs.sh/f/1V3V2P4kpAumP9mUFiZ89C4GnNKHTXFvruVyAOm6ZwU2Sibo",
+    quote: "Building scalable mobile solutions with a focus on user experience.",
+    bio: "Viswateja Yetukuri excels in blockchain development, building secure and scalable decentralized solutions while mentoring aspiring developers."
   }
 ];
 
