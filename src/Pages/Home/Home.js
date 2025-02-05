@@ -110,7 +110,7 @@ const Home = () => {
                     download="Rules & Regulations"
                     className="bg-gray-500 py-2 px-6 hover:bg-green-500 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]"
                   >
-                    Rules & Regulations
+                    Rules & Regulation
                   </a>
                 </div>
               </div>
