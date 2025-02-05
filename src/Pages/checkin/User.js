@@ -22,6 +22,7 @@ const User = () => {
     };
 
     fetchData();
+    
   }, []);
 
   const handleCheckIn = async () => {
