@@ -29,6 +29,7 @@ const User = () => {
     if (!selectedTeam) return;
     console.log(selectedTeam);
     
+    
     try {
       await axios.put(`https://bharat-techx.vercel.app/api/registrations/checkin/${selectedTeam},{"isCheckedin": "true"}`);
       setShowPopup(true);
