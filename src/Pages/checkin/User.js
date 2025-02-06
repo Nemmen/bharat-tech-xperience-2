@@ -12,7 +12,7 @@ const User = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("ttps://bharat-techx.vercel.app/api/registrations");
+        const res = await axios.get("https://bharat-techx.vercel.app/api/registrations");
         console.log(res.data);
         
         setTeams(res.data);
@@ -29,8 +29,9 @@ const User = () => {
     if (!selectedTeam) return;
     console.log(selectedTeam);
     
+    
     try {
-      await axios.put(`ttps://bharat-techx.vercel.app/api/registrations/checkin/${selectedTeam},{"isCheckedin": "true"}`);
+      await axios.put(`https://bharat-techx.vercel.app/api/registrations/checkin/${selectedTeam},{"isCheckedin": "true"}`);
       setShowPopup(true);
       setTimeout(() => setShowPopup(false), 2000);
 
