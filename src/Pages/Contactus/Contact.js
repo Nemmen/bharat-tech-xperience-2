@@ -4,16 +4,22 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Earth } from "../../Components/components/earth";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const CanvasContainer = styled.div`
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
 `;
+const showNotification = () => {
+    toast.error("Registration Closed", { position: "top-right", autoClose: 3000 });
+  };
 export default function Contact() {
   const phoneNumber = +916204991247;
   return (
     <>
+    <ToastContainer position="top-right" autoClose={3000} />
       <section
         id="contact"
         class="text-white overflow-hidden flex flex-wrap body-font relative"
@@ -88,7 +94,7 @@ export default function Contact() {
               </div>
              <div className="flex justify-center">
 
-             <Link to='/register'>
+             <Link to="#" onClick={showNotification}>
                <button className='bg-gray-500  py-2 px-6 hover:bg-green-500 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px] cursor-pointer'>Register Now...</button>
              </Link>
              </div>

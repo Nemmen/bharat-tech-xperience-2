@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import axios from 'axios';
 
-const TeamCheckIn = () => {
+const User = () => {
   const [search, setSearch] = useState("");
   const [selectedTeam, setSelectedTeam] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
@@ -12,7 +12,7 @@ const TeamCheckIn = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/registrations");
+        const res = await axios.get("ttps://bharat-techx.vercel.app/api/registrations");
         console.log(res.data);
         
         setTeams(res.data);
@@ -22,6 +22,7 @@ const TeamCheckIn = () => {
     };
 
     fetchData();
+    
   }, []);
 
   const handleCheckIn = async () => {
@@ -29,7 +30,7 @@ const TeamCheckIn = () => {
     console.log(selectedTeam);
     
     try {
-      await axios.put(`http://localhost:5000/api/registrations/checkin/${selectedTeam},{"isCheckedin": "true"}`);
+      await axios.put(`ttps://bharat-techx.vercel.app/api/registrations/checkin/${selectedTeam},{"isCheckedin": "true"}`);
       setShowPopup(true);
       setTimeout(() => setShowPopup(false), 2000);
 
@@ -126,4 +127,4 @@ const TeamCheckIn = () => {
   );
 };
 
-export default TeamCheckIn;
+export default User;

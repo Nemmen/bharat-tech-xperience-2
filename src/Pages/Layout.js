@@ -73,7 +73,7 @@ import Glimpses from "../Components/components/Glimpses/Glimpses";
 import Mentors from "../Components/components/Mentors/Mentors";
 import Organizers from "../Components/components/Organizers/Organizers";
 import Judges from "../Components/components/Judges/Judges";
-import CodeOfConduct from "../Components/components/CodeofConduct/CodeofConduct";
+// import CodeOfConduct from "../Components/components/CodeofConduct/CodeofConduct";
 import Faq from "./Faq/Faq";
 import Catalyst from "../Components/components/Catalysts/Catalyst";
 import Guests from "../Components/components/Guests/Guest";
