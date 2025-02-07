@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
-import axios from 'axios';
+import axios from "axios";
 
 const User = () => {
   const [search, setSearch] = useState("");
@@ -12,9 +12,10 @@ const User = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("https://bharat-techx.vercel.app/api/registrations");
+        const res = await axios.get(
+          "https://bharat-tech-backend.vercel.app/api/registrations"
+        );
         console.log(res.data);
-        
         setTeams(res.data);
       } catch (err) {
         console.error("Error fetching data:", err);
@@ -22,16 +23,17 @@ const User = () => {
     };
 
     fetchData();
-    
   }, []);
 
   const handleCheckIn = async () => {
     if (!selectedTeam) return;
-    console.log(selectedTeam);
-    
-    
+
     try {
-      await axios.put(`https://bharat-techx.vercel.app/api/registrations/checkin/${selectedTeam},{"isCheckedin": "true"}`);
+      await axios.put(
+        `https://bharat-tech-backend.vercel.app/api/registrations/checkin/${selectedTeam}`,
+        { isCheckedin: true } // Corrected request payload
+      );
+
       setShowPopup(true);
       setTimeout(() => setShowPopup(false), 2000);
 
@@ -47,7 +49,12 @@ const User = () => {
   };
 
   const filteredTeams = search
-    ? teams.filter((team) => team.teamLeader.email.toLowerCase() === search.toLowerCase())
+    ? teams.filter(
+        (team) =>
+          team.teamLeader &&
+          team.teamLeader.email &&
+          team.teamLeader.email.toLowerCase() === search.toLowerCase()
+      )
     : [];
 
   return (
@@ -58,7 +65,10 @@ const User = () => {
 
         {/* Search Bar */}
         <div className="relative w-full max-w-lg z-10">
-          <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-300" size={24} />
+          <Search
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-300"
+            size={24}
+          />
           <motion.input
             type="text"
             placeholder="Search by Leader's Email..."
@@ -79,20 +89,27 @@ const User = () => {
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setSelectedTeam(team._id)}
                 className={`p-6 border border-gray-500 rounded-xl cursor-pointer transition-all backdrop-blur-md shadow-lg ${
-                  selectedTeam === team._id ? "bg-indigo-900 bg-opacity-70" : "bg-gray-800 bg-opacity-50"
+                  selectedTeam === team._id
+                    ? "bg-indigo-900 bg-opacity-70"
+                    : "bg-gray-800 bg-opacity-50"
                 }`}
               >
                 <h2 className="text-xl font-semibold mb-2">{team.teamName}</h2>
                 <p className="text-gray-300">Leader: {team.teamLeader.name}</p>
                 <div className="mt-3 text-gray-400 flex flex-wrap gap-2">
                   {team.teamMembers.map((member, index) => (
-                    <span key={index} className="px-3 py-1 bg-gray-700 bg-opacity-50 rounded-full text-sm">
+                    <span
+                      key={index}
+                      className="px-3 py-1 bg-gray-700 bg-opacity-50 rounded-full text-sm"
+                    >
                       {member.name}
                     </span>
                   ))}
                 </div>
                 {team.isCheckedin && (
-                  <p className="text-green-400 mt-2 text-sm font-bold">✔ Checked In</p>
+                  <p className="text-green-400 mt-2 text-sm font-bold">
+                    ✔ Checked In
+                  </p>
                 )}
               </motion.div>
             ))}
