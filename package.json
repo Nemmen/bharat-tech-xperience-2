@@ -24,6 +24,7 @@
     "react-slick": "^0.30.3",
     "react-toastify": "^11.0.3",
     "slick-carousel": "^1.8.1",
+    "socket.io-client": "^4.8.1",
     "styled-components": "^6.0.8",
     "swiper": "^10.3.0",
     "three": "^0.156.1",

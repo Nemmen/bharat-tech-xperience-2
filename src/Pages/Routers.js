@@ -6,6 +6,8 @@ import { Route , Routes } from 'react-router-dom';
 // import Home from './Home/Home';
 import Layout from './Layout';
 import User from './checkin/User';
+import Tome from './Tome';
+import Vedio from './Vedio';
 
 
 
@@ -19,6 +21,8 @@ const Routers = () => {
       <Route path='/home' element={<Layout/>}/>
       {/* <Route path='/register' element={<Register/>}/> */}
       <Route path='/checkin' element={<User/>}/>
+      <Route path="/start-up" element={<Tome />} />
+      <Route path="/vedio" element={<Vedio />} />
     
   
 

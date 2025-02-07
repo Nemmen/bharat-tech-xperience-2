@@ -789,7 +789,7 @@ export default function Register() {
     }
 
     try {
-      const response = await fetch("https://bharat-techx.vercel.app/api/register", {
+      const response = await fetch("https://bharat-tech-backend.vercel.app/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
