@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { io } from "socket.io-client";
 import inaugurationVideo from "./inaugration/3D Countdown Timer 10 Seconds.mp4";
 
 const Vedio = () => {
@@ -6,23 +7,15 @@ const Vedio = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    const checkVideoStatus = async () => {
-        try {
-          const response = await fetch("https://bharat-tech-backend.vercel.app/api/video-status");
-          
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-      
-          const data = await response.json();
-          setIsPlaying(data.isPlaying);
-        } catch (error) {
-          console.error("Error fetching video status:", error);
-        }
-      };
-      
-    const interval = setInterval(checkVideoStatus, 1000);
-    return () => clearInterval(interval);
+    const socket = io("https://bharat-tech-backend.vercel.app"); // Your backend URL
+
+    socket.on("video-status", (data) => {
+      setIsPlaying(data.isPlaying);
+    });
+
+    return () => {
+      socket.disconnect();
+    };
   }, []);
 
   useEffect(() => {
