@@ -8,7 +8,7 @@ const Vedio = () => {
   useEffect(() => {
     const checkVideoStatus = async () => {
         try {
-          const response = await fetch("https://bharat-techx.vercel.app/api/video-status");
+          const response = await fetch("https://bharat-tech-backend.vercel.app/api/video-status");
           
           if (!response.ok) {
             throw new Error("Network response was not ok");
